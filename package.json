@@ -1,0 +1,27 @@
+{
+  "name": "cli-scraper-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "babel-node server.js"
+  },
+  "author": "Brigido Alejo <brigsalejo@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "express": "^4.14.0",
+    "moment": "^2.14.1",
+    "moment-duration-format": "^1.3.0",
+    "mongoose": "^4.5.9",
+    "request": "^2.74.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-2": "^6.13.0",
+    "babel-watch": "^2.0.2",
+    "cross-env": "^2.0.0",
+    "nodemon": "^1.10.0"
+  }
+}

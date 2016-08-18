@@ -1,0 +1,10 @@
+{
+  "port": "8080",
+  "database": {
+    "mongodb": "mongodb://127.0.0.1:27017/cli_webscraper_node"
+  },
+  "logs": {
+    "path" : "logs",
+    "file_ext": ".csv"
+  }
+}
