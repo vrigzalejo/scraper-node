@@ -3,6 +3,7 @@
  */
 'use strict';
 
+// node modules
 import Express from 'express'
 import FS from 'fs'
 import Moment from 'moment'
@@ -11,12 +12,17 @@ import Cheerio from 'cheerio'
 import Mongoose from 'mongoose'
 import Serialize from 'node-serialize'
 import DNS from 'dns'
+import Path from 'path'
+
 // config modules
 import config from '../config.json'
+
 // constants
 import FileExtension from './constant/FileExtension'
+
 // controllers
 import Github from './controller/Github'
+
 // database
 import Mongo from './db/Mongo'
 
@@ -30,6 +36,7 @@ let dependencies = {
     Request: Request,
     Cheerio: Cheerio,
     Mongoose: Mongoose,
+    Path: Path,
     Serialize: Serialize,
 
     // config modules
