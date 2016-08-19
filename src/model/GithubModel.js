@@ -46,13 +46,18 @@ class GithubModel {
     this._created = created;
   }
 
-  static mongoModel() {
-    return dependencies.Mongoose.model('Github', new dependencies.Mongoose.Schema({
-      data: String,
-      ip_address: String,
-      url: String,
-      created: String
-    }));
+  static mongoModel(model) {
+    model = 'Github' || model;
+    if(dependencies.Mongoose.modelNames().indexOf(model) > -1) {
+      return dependencies.Mongoose.model(model)
+    } else {
+      return dependencies.Mongoose.model(model, new dependencies.Mongoose.Schema({
+        data: String,
+        ip_address: String,
+        url: String,
+        created: String
+      }));
+    }
   }
 }
 
