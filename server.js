@@ -4,15 +4,15 @@
 
 'use strict';
 
-import Github from './src/controller/Github'
 import dependencies from './src/dependencies'
+dependencies.Mongo.connect();
 
 let app = dependencies.Express();
 
 app.get('/scrape/:controller', (req, res) => {
   switch(req.params.controller) {
     case 'github':
-      Github.scrape(req, res);
+      dependencies.Github.scrape(req, res);
       console.log(`You're scraping "${req.params.controller}" now.`);
       break;
     default:
