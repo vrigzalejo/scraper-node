@@ -1,0 +1,17 @@
+# Required to run your project under the correct environment.
+language: node_js
+
+# Versions of NodeJS you want your project run with.
+node_js:
+  - "6"
+  - "6.1"
+  - "5.11"
+  - "0.6"
+  - "iojs"
+
+# Commands to be run before your environment runs.
+before_script:
+  - npm install
+
+# Commands you want to run that will verify your build.
+script: npm run nodemon
