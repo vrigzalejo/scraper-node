@@ -13,6 +13,8 @@ import Mongoose from 'mongoose'
 import Serialize from 'node-serialize'
 import DNS from 'dns'
 import Path from 'path'
+import Chai from 'chai'
+import ChaiHttp from 'chai-http'
 
 // config modules
 import config from '../config.json'
@@ -38,6 +40,8 @@ let dependencies = {
     Mongoose: Mongoose,
     Path: Path,
     Serialize: Serialize,
+    Chai: Chai,
+    ChaiHttp: ChaiHttp,
 
     // config modules
     config: config,
