@@ -14,4 +14,4 @@ before_script:
   - npm install
 
 # Commands you want to run that will verify your build.
-script: npm run nodemon
+#script: npm run nodemon
